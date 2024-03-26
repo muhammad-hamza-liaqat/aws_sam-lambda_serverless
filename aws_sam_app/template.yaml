@@ -21,7 +21,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: src/
-      Handler: app.lambdaHandler
+      Handler: app.get_car
       Runtime: nodejs20.x
       Architectures:
       - x86_64
@@ -36,7 +36,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: src/
-      Handler: app.lambdaHandler
+      Handler: app.add_car
       Runtime: nodejs20.x
       Architectures:
       - x86_64
@@ -50,7 +50,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: src/
-      Handler: app.lambdaHandler
+      Handler: app.update_car
       Runtime: nodejs20.x
       Architectures:
       - x86_64
@@ -64,7 +64,7 @@ Resources:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: src/
-      Handler: app.lambdaHandler
+      Handler: app.delete_car
       Runtime: nodejs20.x
       Architectures:
       - x86_64
